@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RealtimeDatabaseViewController" customModule="FirebaseiOS" customModuleProvider="target">
+            <connections>
+                <outlet property="noteTableView" destination="i72-OH-YXu" id="SYX-S5-CcH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Realtime Database" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3SS-ah-V5e">
+                    <rect key="frame" x="83.333333333333329" y="83" width="226.66666666666669" height="33.666666666666657"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="i72-OH-YXu">
+                    <rect key="frame" x="0.0" y="164.66666666666669" width="393" height="653.33333333333326"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQ6-VM-gQU">
+                    <rect key="frame" x="313" y="738" width="56" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="EiD-aT-AYS"/>
+                        <constraint firstAttribute="width" constant="56" id="tA1-SR-5aP"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" image="plus" catalog="system">
+                        <backgroundConfiguration key="background" cornerRadius="50"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="addNewNoteButtonClicked:" destination="-1" eventType="touchUpInside" id="RXj-Tu-DIz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="i72-OH-YXu" secondAttribute="trailing" id="60h-Cs-LGl"/>
+                <constraint firstItem="3SS-ah-V5e" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7F2-wT-6rP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JQ6-VM-gQU" secondAttribute="trailing" constant="24" id="8Tm-C2-QX3"/>
+                <constraint firstItem="i72-OH-YXu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="N4U-Oj-LGz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JQ6-VM-gQU" secondAttribute="bottom" constant="24" id="UzS-BX-SOp"/>
+                <constraint firstItem="3SS-ah-V5e" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="eOd-Vw-nNv"/>
+                <constraint firstItem="i72-OH-YXu" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="fLw-NO-h2O"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="i72-OH-YXu" secondAttribute="bottom" id="pDm-U6-MYx"/>
+                <constraint firstItem="i72-OH-YXu" firstAttribute="top" secondItem="3SS-ah-V5e" secondAttribute="bottom" constant="48" id="sHF-vp-lbW"/>
+            </constraints>
+            <point key="canvasLocation" x="20.610687022900763" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

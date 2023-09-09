@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  FirebaseiOS
+
+  Created by Zokirjon Mamadjonov on 21/06/2023.
+  
+*/
+
+//SignIn
+"sign_in_error" = "FirebaseiOS do not recognize the email/password combo!";
+"ok" = "OK";
+"sign_in_with_google_error" = "Sign in with Google did not succeeded please try again later!";
+
+//SignUp
+"sign_up_error" = "Something went wrong, please try again!";
+
+//Home
+"auth_title" = "Authentication";
+"auth_desc" = "Firebase Authentication provides backend services, easy-to-use SDKs, and ready-made UI libraries to authenticate users to your app.";
+"realtime_database_title" = "Realtime Database";
+"realtime_database_desc" = "Firebase Realtime Database is a cloud-hosted database. Data is stored as JSON and synchronized in realtime to every connected client.";
+"cloud_firestore_title" = "Cloud Firestore";
+"cloud_firestore_desc" = "Firebase Cloud Firestore is a flexible, scalable database for mobile, web, and server development from Firebase and Google Cloud.";
+"storage_title" = "Storage";
+"storage_desc" = "Firebase Cloud Storage for Firebase is built for app developers who need to store and serve user-generated content, such as photos or videos.";
+"messaging_title" = "Messaging";
+"messaging_desc" = "Firebase Cloud Messaging (FCM) is a cross-platform messaging solution that lets you reliably send messages at no cost.";
+"crashlytics_title" = "Crashlytics";
+"crashlytics_desc" = "Firebase Crashlytics is a lightweight, realtime crash reporter that helps you track, prioritize, and fix stability issues that erode your app quality.";
+"remote_config_title" = "Remote Config";
+"remote_config_desc" = "Firebase Remote Config is a cloud service that lets you change the behavior and appearance of your app without requiring users to download an app update.";
+
+//Authentication
+"sign_out_error" = "Something went wrong, please try again later!";
+
+//Cloud Firestore
+"update_quote_error" = "Something went wrong, please try again later!";
+
+//Storage
+"upload_favorite_image_error" = "Something went wrong, please try again later!";
